@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Itinerary Builder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="itinerary-container">
+
+        <h1>Trip Itinerary</h1>
+
+        <!-- INPUT SECTION -->
+
+        <div class="itinerary-form">
+
+            <input type="text"
+                id="city"
+                placeholder="Enter City">
+
+            <input type="text"
+                id="activity"
+                placeholder="Enter Activity">
+
+            <input type="number"
+                id="cost"
+                placeholder="Enter Cost">
+
+            <button id="addPlanBtn">
+                Add Plan
+            </button>
+            
+
+        </div>
+
+        <!-- OUTPUT SECTION -->
+
+        <div id="planList">
+
+        </div>
+
+        <!-- TOTAL -->
+
+        <div class="total-budget">
+
+            <h2>
+                Total Budget:
+                ₹<span id="totalCost">0</span>
+            </h2>
+            <a href="budget.html">
+    <button>
+        View Budget Analytics
+    </button>
+</a>
+
+
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
