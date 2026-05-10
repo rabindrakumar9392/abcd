@@ -1,0 +1,609 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    width: 100%;
+    height: 70px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+}
+
+nav h1 {
+    color: #0077ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0077ff;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 70px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 50px;
+    gap: 40px;
+}
+
+.left {
+    width: 45%;
+}
+
+.left h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.left button {
+    padding: 14px 28px;
+    border: none;
+    background: #0077ff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.left button:hover {
+    background: #005ed1;
+}
+
+.right {
+    width: 45%;
+}
+
+.right img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* =========================
+   LOGIN / AUTH PAGE
+========================= */
+
+.auth-container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to right, #0077ff, #00c6ff);
+}
+
+.auth-box {
+    width: 350px;
+    background: white;
+
+    padding: 40px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.auth-box h2 {
+    text-align: center;
+}
+
+.auth-box input {
+    padding: 14px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    outline: none;
+}
+
+.auth-box button {
+    padding: 14px;
+    border: none;
+
+    background: #0077ff;
+    color: white;
+
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.auth-box button:hover {
+    background: #005ed1;
+}
+
+.auth-box p {
+    text-align: center;
+}
+
+.auth-box span {
+    color: #0077ff;
+    cursor: pointer;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 250px;
+    background: #0077ff;
+    color: white;
+
+    padding: 30px;
+}
+
+.sidebar h2 {
+    margin-bottom: 40px;
+}
+
+.sidebar ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sidebar li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar li:hover {
+    padding-left: 5px;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+}
+
+.topbar button {
+    padding: 12px 22px;
+
+    border: none;
+    background: #0077ff;
+    color: white;
+
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.topbar button:hover {
+    background: #005ed1;
+}
+
+/* =========================
+   TRIP CARDS
+========================= */
+
+.trip-container {
+    display: flex;
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.trip-card {
+    width: 300px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+}
+
+.trip-card h3,
+.trip-card p,
+.trip-card span {
+    padding: 10px 15px;
+}
+
+.trip-card span {
+    display: block;
+    color: #0077ff;
+    font-weight: bold;
+}
+
+/* =========================
+   CREATE TRIP
+========================= */
+
+.trip-form-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f4f7fb;
+
+    padding: 40px;
+}
+
+.trip-form {
+    width: 450px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.trip-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.trip-form input,
+.trip-form textarea {
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.trip-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.trip-form button {
+    padding: 14px;
+
+    border: none;
+
+    background: #0077ff;
+
+    color: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.trip-form button:hover {
+    background: #005ed1;
+}
+
+/* =========================
+   ITINERARY
+========================= */
+
+.itinerary-container {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #f5f7fb;
+
+    padding: 40px;
+}
+
+.itinerary-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.itinerary-form {
+    display: flex;
+    gap: 15px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+}
+
+.itinerary-form input {
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    width: 220px;
+}
+
+.itinerary-form button {
+    padding: 14px 25px;
+
+    border: none;
+
+    background: #0077ff;
+
+    color: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.itinerary-form button:hover {
+    background: #005ed1;
+}
+
+/* PLAN CARD */
+
+.plan-card {
+    width: 80%;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.plan-left h3 {
+    margin-bottom: 10px;
+}
+
+.total-budget {
+    text-align: center;
+
+    margin-top: 40px;
+
+    color: #0077ff;
+}
+
+/* =========================
+   BUDGET ANALYTICS
+========================= */
+
+.budget-container {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 40px;
+
+    background: #f4f7fb;
+}
+
+.budget-container h1 {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+/* ANALYTICS CARDS */
+
+.analytics-cards {
+    display: flex;
+
+    gap: 25px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 50px;
+}
+
+.analytics-card {
+    width: 250px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.analytics-card:hover {
+    transform: translateY(-5px);
+}
+
+.analytics-card h2 {
+    color: #0077ff;
+
+    margin-bottom: 10px;
+}
+
+/* CHART */
+
+.chart-box {
+    width: 80%;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left h2 {
+        font-size: 40px;
+    }
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .plan-card {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .chart-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    nav {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .left h2 {
+        font-size: 32px;
+    }
+
+    .trip-form,
+    .auth-box {
+        width: 100%;
+    }
+
+    .trip-card {
+        width: 100%;
+    }
+}
